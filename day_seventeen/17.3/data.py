@@ -1,5 +1,5 @@
 question_data = [
-            {"category":"Science: Computers","type":"boolean","difficulty":"easy","question":"The programming language &quot;Python&quot; is based off a modified version of &quot;JavaScript&quot;.","correct_answer":"False","incorrect_answers":["True"]},
+            {"category":"Science: Computers","type":"boolean","difficulty":"easy","question":"The programming language Python is based off a modified version of JavaScript.","correct_answer":"False","incorrect_answers":["True"]},
             {"category":"Science: Computers","type":"boolean","difficulty":"easy","question":"The logo for Snapchat is a Bell.","correct_answer":"False","incorrect_answers":["True"]},
             {"category":"Science: Computers","type":"boolean","difficulty":"easy","question":"Pointers were not used in the original C programming language; they were added later on in C++.","correct_answer":"False","incorrect_answers":["True"]},
             {"category":"Science: Computers","type":"boolean","difficulty":"easy","question":"RAM stands for Random Access Memory.","correct_answer":"True","incorrect_answers":["False"]},
