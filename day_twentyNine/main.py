@@ -14,7 +14,7 @@ noOfSymbols = 2
 noOfDigits = 2
 password_list = []
 
-def generate_pass():
+def generate_entry():
     if password_input.get() == 0:
         pass
     else:
@@ -39,6 +39,8 @@ def generate_pass():
         print(password)
         print(password_list)
         password_list.clear()
+
+        
 # ---------------------------- SAVE PASSWORD ------------------------------- #
 
 def add_entry():
@@ -57,7 +59,9 @@ def add_entry():
                 website_input.delete(0,END)
                 password_input.delete(0, END)
         
+# ---------------------------- SEARCH PASSWORD ------------------------------- #
 
+    
 
 # ---------------------------- UI SETUP ------------------------------- #
 
@@ -82,15 +86,21 @@ info_label.grid(column=0, row=2 )
 password_label = Label(text="Password:")
 password_label.grid(column=0, row=3)
 
+
+#Buttons 
+search_button = Button(text= "Search", command= search_entry, width=13)
+search_button.grid(column= 2, row = 1)
+
+generate_button = Button(text="Generate Password", highlightthickness=0, command= generate_entry)
+generate_button.grid(column=2, row=3,)
+
 add_button = Button(text="Add", command= add_entry, width=36)
 add_button.grid(column=1, row=4, columnspan=2)
 
-generate_button = Button(text="Generate Password", highlightthickness=0, command= generate_pass)
-generate_button.grid(column=2, row=3,)
 
 #Entries
-website_input = Entry(width=35)
-website_input.grid(column=1, row=1, columnspan=2)
+website_input = Entry(width=21)
+website_input.grid(column=1, row=1)
 website_input.focus()
 
 
